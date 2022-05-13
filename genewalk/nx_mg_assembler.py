@@ -420,3 +420,7 @@ class UserNxMgAssembler(NxMgAssembler):
                         self.graph.nodes[node]['GO'] = go_term.id
                         self.graph.nodes[node]['name'] = go_term.name
                         self.graph.nodes[node]['domain'] = go_term.namespace
+                    else:
+                        self.graph.nodes[node]['GO'] = node
+                        self.graph.nodes[node]['name'] = node
+                        self.graph.nodes[node]['domain'] = node
